@@ -1,4 +1,5 @@
 # DFS - https://school.programmers.co.kr/learn/courses/30/lessons/43165
+# 한깊이로 패면된다 -> 재귀 -> 파라미터 변경
 # 재귀 DFS로 풀이 - >>> 주어진 numbers의 배열의 담긴 숫자 순서대로 첫 숫자부터 뒤의 숫자를 더하거나 빼는 조합(두 조합 모두 검사) 해서 끝까지 더하거나 빼서 마지막 값이
 # 주어진 target값과 같을 때 count 를 하여 정답을 도출하는 문제.
 def solution(numbers, target):
@@ -15,6 +16,7 @@ def solution(numbers, target):
             return
         # 주어진 숫자 순서를 전부 탐색한 경우가 아니라면 현재 숫자의 다음 숫자를 더하고 빼는 경우로 분기하여 재귀호출
         else:
+            # 한 깊이 즉 모든 숫자를 차례대로 더한 것 부터 탐색
             dfs(index + 1, value + numbers[index])
             dfs(index + 1, value - numbers[index])
 
