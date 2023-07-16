@@ -1,0 +1,16 @@
+https://school.programmers.co.kr/learn/courses/30/lessons/133025
+
+INNER JOIN은 두 테이블 간의 공통된 열 값을 기준으로 데이터를 결합하는 데 사용한다.
+
+FIRST_HALF, ICECREAM_INFO 을 참조 해서
+Inner Join 을 수행 하는데 두 테이블의 FLAVOR라는 공통의 컬럼의 값이 같은 행들을 조합한다.
+위와 같이 조합된 임시 테이블에서
+FIRST_HALF.TOTAL_ORDER의 값이 3000 이상이며, ICECREAM_INFO.INGREDIENT_TYPE 의 속성이 'fruit_based' 인 값 들에 해당되는
+FLAVOR 를 FIRST_HALF 테이블 에서 검색해 온다.
+
+SELECT FIRST_HALF.FLAVOR
+    FROM FIRST_HALF
+    INNER JOIN ICECREAM_INFO
+        ON FIRST_HALF.FLAVOR = ICECREAM_INFO.FLAVOR
+    WHERE TOTAL_ORDER > 3000
+        AND INGREDIENT_TYPE = 'fruit_based'
