@@ -1,6 +1,6 @@
 # https://www.acmicpc.net/problem/3986
 # 괄호를 교차하지 않고 단어 ABBABB 와 같이 있을 때, A(BB)A(BB) -> (AA) -> () 이면
-# 좋은 단어로 간주하는 문제
+# 좋은 단어로 간주하는 문제 입니다.
 import sys
 
 N = int(sys.stdin.readline().rstrip())
