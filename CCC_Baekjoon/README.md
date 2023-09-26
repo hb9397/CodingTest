@@ -7,7 +7,7 @@
 | ✅  | 0x04 | [연결 리스트](https://www.acmicpc.net/workbook/view/7308) |
 | ✅  | 0x05 | [스택](https://www.acmicpc.net/workbook/view/7309) |
 | ✅  | 0x06 | [큐](https://www.acmicpc.net/workbook/view/7310) |
-|    | 0x07 | [덱](https://www.acmicpc.net/workbook/view/7311) |
+| ✅  | 0x07 | [덱](https://www.acmicpc.net/workbook/view/7311) |
 |    | 0x08 | [스택의 활용(수식의 괄호 쌍)](https://www.acmicpc.net/workbook/view/7312) |
 |    | 0x09 | [BFS](https://www.acmicpc.net/workbook/view/7313) |
 |    | 0x0B | [재귀](https://www.acmicpc.net/workbook/view/7314) |

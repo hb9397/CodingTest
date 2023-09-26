@@ -18,7 +18,7 @@ for i in range(N):
     currentMin.append((numbers[i], i))
 
     # 현재 슬라이딩 윈도우(범위)가 가능한 인덱스 범위에서 벗어난 경우 제거
-    if currentMin[0][1] < i - L:
+    if currentMin[0][1] <= i - L:
         currentMin.popleft()
 
     print(currentMin[0][0], end=" ")
